@@ -20,7 +20,7 @@ class GradientFrame(tk.Canvas):
         self._color2 = color2
         self.bind("<Configure>", self._draw_gradient)
 
-    def _draw_gradient(self):
+    def _draw_gradient(self, *args):
         self.delete("gradient")
         width = self.winfo_width()
         height = self.winfo_height()
